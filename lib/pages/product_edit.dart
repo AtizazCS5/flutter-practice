@@ -26,9 +26,10 @@ class _ProductEditPageState extends State<ProductEditPage> {
   final _priceFocusNode = FocusNode();
 
   Widget _buildTitleTextField(Product product) {
-    return EnsureVisibleWhenFocused(
-      focusNode: _titleFocusNode,
-      child: TextFormField(
+    return //EnsureVisibleWhenFocused(
+      //focusNode: _titleFocusNode,
+      //child:
+      TextFormField(
         focusNode: _titleFocusNode,
         decoration: InputDecoration(labelText: 'Product Title'),
         initialValue: product == null ? '' : product.title,
@@ -41,14 +42,14 @@ class _ProductEditPageState extends State<ProductEditPage> {
         onSaved: (String value) {
           _formData['title'] = value;
         },
-      ),
-    );
+      );
   }
 
   Widget _buildDescriptionTextField(Product product) {
-    return EnsureVisibleWhenFocused(
-      focusNode: _descriptionFocusNode,
-      child: TextFormField(
+    return //EnsureVisibleWhenFocused(
+      //focusNode: _descriptionFocusNode,
+      //child:
+      TextFormField(
         focusNode: _descriptionFocusNode,
         maxLines: 4,
         decoration: InputDecoration(labelText: 'Product Description'),
@@ -62,14 +63,14 @@ class _ProductEditPageState extends State<ProductEditPage> {
         onSaved: (String value) {
           _formData['description'] = value;
         },
-      ),
-    );
+      );
   }
 
   Widget _buildPriceTextField(Product product) {
-    return EnsureVisibleWhenFocused(
-      focusNode: _priceFocusNode,
-      child: TextFormField(
+    return //EnsureVisibleWhenFocused(
+      //focusNode: _priceFocusNode,
+      //child:
+      TextFormField(
         focusNode: _priceFocusNode,
         keyboardType: TextInputType.number,
         decoration: InputDecoration(labelText: 'Product Price'),
@@ -84,8 +85,7 @@ class _ProductEditPageState extends State<ProductEditPage> {
         onSaved: (String value) {
           _formData['price'] = double.parse(value);
         },
-      ),
-    );
+      );
   }
 
   Widget _buildSubmitButton() {

@@ -1,4 +1,5 @@
 // This file is a hack and it was already implemented in flutter. Therefore, no need to use this hack.
+/*
 import 'dart:async';
 
 import 'package:flutter/rendering.dart';
@@ -87,3 +88,4 @@ class EnsureVisibleWhenFocusedState extends State<EnsureVisibleWhenFocused> {
 
   Widget build(BuildContext context) => widget.child;
 }
+*/
